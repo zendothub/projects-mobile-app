@@ -1,0 +1,206 @@
+name: zen_mobile
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  animations: ^2.0.11
+  cached_network_image: ^3.4.1
+  dio: ^5.7.0
+  emoji_picker_flutter: ^3.1.0
+  file_picker: ^8.1.4
+  flutter_dotenv: ^5.0.2
+  flutter_local_notifications: ^18.0.1
+  flutter_riverpod: ^2.6.1
+  flutter_slidable: ^3.1.1
+  flutter_svg: ^2.0.16
+  fluttertoast: ^8.2.8
+  font_awesome_flutter: ^10.8.0
+  google_fonts: ^6.2.1
+  google_sign_in: ^6.2.2
+  http_parser: ^4.0.2
+  image_picker: ^1.1.2
+  intl: ^0.19.0
+  loading_indicator: ^3.1.1
+  mocktail: ^1.0.4
+  package_config: ^2.1.0
+  path_provider: ^2.1.5
+  percent_indicator: ^4.2.4
+  rename: ^3.0.2
+  retry: ^3.1.2
+  shared_preferences: ^2.3.3
+  syncfusion_flutter_charts: ^27.2.4
+  table_calendar: ^3.1.2
+  url_launcher: ^6.3.1
+  xml: ^6.5.0
+  xml2json: ^6.2.5
+  connectivity_plus: ^6.1.0
+  flutter_html: ^3.0.0-beta.2
+  calendar_date_picker2: ^1.1.7
+  material_symbols_icons: ^4.2800.0
+  sentry_flutter: ^8.10.1
+  shimmer: ^3.0.0
+  posthog_flutter: ^4.6.0
+  flutter_inappwebview: ^6.1.5
+  flutter_markdown: ^0.7.4+3
+  lucide_icons: ^0.257.0
+  dartz: ^0.10.1
+  upgrader: ^11.3.0
+  flutter_native_splash: ^2.4.3
+  
+
+dev_dependencies:
+  build_runner: ^2.4.13
+  flutter_lints: ^5.0.0
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter 
+
+flutter_native_splash:
+  color: "#3F76FF"
+  image: assets/images/splash_logo.png
+  android: true
+  ios: true
+
+  android_12:
+    image: assets/images/splash_logo.png
+
+  flutter_launcher_icons: ^0.13.1
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: assets/images/app_logo.png
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - .env
+    - assets/
+    - assets/images/
+    - assets/images/global_search_icons/
+    - assets/svg_images/transfer.svg
+    - assets/svg_images/logo.svg
+    - assets/svg_images/unstarted.svg
+    - assets/svg_images/dark_mode.svg
+    - assets/svg_images/light_mode.svg
+    - assets/svg_images/light_high_contrast.svg
+    - assets/svg_images/dark_high_contrast.svg
+    - assets/svg_images/custom_theme.svg
+    - assets/svg_images/search.svg
+    - assets/svg_images/redirect.svg
+    - assets/svg_images/settings.svg
+    - assets/svg_images/graph_icon.svg
+    - assets/svg_images/label_group.svg
+    - assets/svg_images/calendar_icon.svg
+    - assets/svg_images/edit_icon.svg
+    - assets/svg_images/options_icon.svg
+    - assets/svg_images/github_icon.svg
+    - assets/svg_images/home.svg
+    - assets/svg_images/projects.svg
+    - assets/svg_images/issues.svg
+    - assets/svg_images/views.svg
+    - assets/svg_images/more.svg
+    - assets/svg_images/circle.svg
+    - assets/svg_images/view_empty.svg
+    - assets/svg_images/github.svg
+    - assets/svg_images/stars.svg
+    - assets/svg_images/slack.svg
+    - assets/svg_images/view_card.svg
+    - assets/svg_images/page_card.svg
+    - assets/svg_images/done.svg
+    - assets/svg_images/cancelled.svg
+    - assets/svg_images/in_progress.svg
+    - assets/svg_images/sub_issue.svg
+    - assets/svg_images/sub_issues.svg
+    - assets/svg_images/send_icon.svg
+    - assets/svg_images/blocking_icon.svg
+    - assets/svg_images/blocked_icon.svg
+    - assets/svg_images/activity.svg
+    - assets/svg_images/profile.svg
+    - assets/svg_images/ellipse_1.svg
+    - assets/svg_images/cycles_icon.svg
+    - assets/svg_images/issues_icon.svg
+    - assets/svg_images/delete.svg
+    - assets/svg_images/link.svg
+    - assets/svg_images/module.svg
+    - assets/svg_images/state_icon.svg
+    - assets/svg_images/assignee.svg
+    - assets/svg_images/priority.svg
+    - assets/svg_images/attachment.svg
+    - assets/svg_images/google_icon.svg
+    - assets/svg_images/google-icon.svg
+    - assets/svg_images/file.svg
+    - assets/svg_images/image.svg
+    - assets/svg_images/empty_cycles.svg
+    - assets/svg_images/empty_modules.svg
+    - assets/svg_images/empty_pages.svg
+    - assets/svg_images/empty_project.svg
+    - assets/svg_images/empty_views.svg
+    - assets/svg_images/delete_icon.svg
+    - assets/svg_images/group.svg
+    - assets/svg_images/jira_logo.svg
+    - assets/images/github_logo.png
+    - assets/images/jira_logo.png
+    - assets/images/slack_logo.png
+    - assets/svg_images/labels_empty.svg
+    - assets/svg_images/arrow_forward.svg
+    - assets/svg_images/empty_notification.svg
+    - assets/svg_images/notification.svg
+    - assets/svg_images/cycle_settings.svg
+    - assets/svg_images/module_settings.svg
+    - assets/svg_images/view_settings.svg
+    - assets/svg_images/issue_archive.svg
+    - assets/svg_images/empty_issues.svg
+    - assets/svg_images/Pending.svg
+
+  
